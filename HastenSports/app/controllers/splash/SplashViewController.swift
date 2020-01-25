@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Lottie
 
-class SplashViewController:  UIViewController {
+class SplashViewController:  BaseViewController {
     
     private var presenter : SplashPresenter? = nil
 
@@ -26,11 +26,29 @@ class SplashViewController:  UIViewController {
         self.animationView.loopMode = .loop
         self.animationView.play()
         
-        self.presenter?.getSportsInfo()
+        if(!Utils.isConnectedToNetwork()){
+            self.stopLottie()
+            self.showAlert(description: NSLocalizedString("internet_error", comment: ""), isCancelVisible: false)
+        }else{
+            self.presenter?.getSportsInfo()
+        }
         
         
         
         
+        
+        
+    }
+    
+    func stopLottie(){
+        self.animationView.stop()
+        self.animationView.isHidden = true
+        self.animationView.removeFromSuperview()
+        
+    }
+    
+    func finishProcess(){
+        exit(0);
     }
         
         
@@ -40,12 +58,12 @@ class SplashViewController:  UIViewController {
 
 extension SplashViewController: SplashViewProtocol{
     
-    func onGetSportsInfoSuccess(data: SportsData) {
-        <#code#>
+    func onGetSportsInfoSuccess(data: Array<Sport>) {
+        
     }
     
     func onGetSportsInfoError() {
-        <#code#>
+        
     }
     
 

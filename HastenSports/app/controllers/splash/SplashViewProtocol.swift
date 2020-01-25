@@ -9,7 +9,7 @@
 import Foundation
 
 protocol SplashViewProtocol: class {
-    func onGetSportsInfoSuccess(data: SportsData)
+    func onGetSportsInfoSuccess(data: Array<Sport>)
     func onGetSportsInfoError()
 
 }
