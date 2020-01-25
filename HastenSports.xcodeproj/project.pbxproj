@@ -23,6 +23,8 @@
 		C3233D8A23DC72ED005A64A9 /* PlayerItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3233D8623DC72EC005A64A9 /* PlayerItemView.xib */; };
 		C3233D8B23DC72ED005A64A9 /* PlayerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D8723DC72EC005A64A9 /* PlayerItemView.swift */; };
 		C3233D8F23DC775C005A64A9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D8E23DC775C005A64A9 /* Extensions.swift */; };
+		C3233D9123DC874E005A64A9 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D9023DC874E005A64A9 /* SportsViewController.swift */; };
+		C3233D9323DC8B79005A64A9 /* SportsCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D9223DC8B79005A64A9 /* SportsCellViewController.swift */; };
 		C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376943A23DC45EF00320565 /* AppDelegate.swift */; };
 		C376943D23DC45EF00320565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376943C23DC45EF00320565 /* ViewController.swift */; };
 		C376944023DC45EF00320565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376943E23DC45EF00320565 /* Main.storyboard */; };
@@ -31,6 +33,7 @@
 		C376945023DC45F000320565 /* HastenSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376944F23DC45F000320565 /* HastenSportsTests.swift */; };
 		C376945B23DC45F000320565 /* HastenSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376945A23DC45F000320565 /* HastenSportsUITests.swift */; };
 		C376946B23DC485800320565 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376946A23DC485800320565 /* ApiClient.swift */; };
+		C388A65D23DC944F0082E64D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388A65C23DC944F0082E64D /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,8 @@
 		C3233D8623DC72EC005A64A9 /* PlayerItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerItemView.xib; sourceTree = "<group>"; };
 		C3233D8723DC72EC005A64A9 /* PlayerItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerItemView.swift; sourceTree = "<group>"; };
 		C3233D8E23DC775C005A64A9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C3233D9023DC874E005A64A9 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		C3233D9223DC8B79005A64A9 /* SportsCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCellViewController.swift; sourceTree = "<group>"; };
 		C376943723DC45EF00320565 /* HastenSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376943A23DC45EF00320565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C376943C23DC45EF00320565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		C376945A23DC45F000320565 /* HastenSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastenSportsUITests.swift; sourceTree = "<group>"; };
 		C376945C23DC45F000320565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C376946A23DC485800320565 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		C388A65C23DC944F0082E64D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F5AC4A1C6CA51CC104F2C51D /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,7 +168,7 @@
 			children = (
 				C3233D8123DC714C005A64A9 /* base */,
 				C376946C23DC486100320565 /* splash */,
-				C376946D23DC487100320565 /* main */,
+				C376946D23DC487100320565 /* sports */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 		C376946923DC467000320565 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C388A65B23DC94180082E64D /* UIStyle */,
 				C3233D7A23DC7013005A64A9 /* utils */,
 				C3233D8423DC72C8005A64A9 /* views */,
 				C3233D7923DC6FF5005A64A9 /* controllers */,
@@ -288,11 +295,21 @@
 			path = splash;
 			sourceTree = "<group>";
 		};
-		C376946D23DC487100320565 /* main */ = {
+		C376946D23DC487100320565 /* sports */ = {
 			isa = PBXGroup;
 			children = (
+				C3233D9023DC874E005A64A9 /* SportsViewController.swift */,
+				C3233D9223DC8B79005A64A9 /* SportsCellViewController.swift */,
 			);
-			path = main;
+			path = sports;
+			sourceTree = "<group>";
+		};
+		C388A65B23DC94180082E64D /* UIStyle */ = {
+			isa = PBXGroup;
+			children = (
+				C388A65C23DC944F0082E64D /* CustomButton.swift */,
+			);
+			path = UIStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +556,7 @@
 				C3233D8323DC7172005A64A9 /* BaseViewController.swift in Sources */,
 				C3233D8B23DC72ED005A64A9 /* PlayerItemView.swift in Sources */,
 				C3233D7E23DC709F005A64A9 /* Sport.swift in Sources */,
+				C3233D9323DC8B79005A64A9 /* SportsCellViewController.swift in Sources */,
 				C376943D23DC45EF00320565 /* ViewController.swift in Sources */,
 				C3233D6F23DC5B50005A64A9 /* ApiConstants.swift in Sources */,
 				C3233D8023DC70AF005A64A9 /* Player.swift in Sources */,
@@ -548,6 +566,8 @@
 				C3233D8F23DC775C005A64A9 /* Extensions.swift in Sources */,
 				C376946B23DC485800320565 /* ApiClient.swift in Sources */,
 				C3233D7123DC616A005A64A9 /* SplashViewController.swift in Sources */,
+				C388A65D23DC944F0082E64D /* CustomButton.swift in Sources */,
+				C3233D9123DC874E005A64A9 /* SportsViewController.swift in Sources */,
 				C3233D7523DC6192005A64A9 /* SplashViewProtocol.swift in Sources */,
 				C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */,
 			);

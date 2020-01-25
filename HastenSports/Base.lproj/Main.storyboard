@@ -59,11 +59,68 @@
                     <navigationItem key="navigationItem" id="9Yn-sq-LnZ"/>
                     <connections>
                         <outlet property="animationView" destination="W3t-zL-2N3" id="YMt-qk-C7m"/>
+                        <segue destination="buE-tN-Gek" kind="show" identifier="from_splash_to_sports" id="Ntq-6m-k0H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="367" y="822"/>
+        </scene>
+        <!--Sports View Controller-->
+        <scene sceneID="0KX-sn-ZzP">
+            <objects>
+                <collectionViewController id="buE-tN-Gek" customClass="SportsViewController" customModule="HastenSports" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jf3-Un-noc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v5K-Rw-nff">
+                            <size key="itemSize" width="150" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SportCell" id="N5q-kt-tq1" customClass="SportsCellViewController" customModule="HastenSports" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="137" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="137" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms8-pP-CcT" customClass="CustomButton" customModule="HastenSports" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="14.5" width="105" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="jup-El-bfh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" red="0.71852736399999995" green="0.059521487550000002" blue="0.13838017969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ms8-pP-CcT" secondAttribute="trailing" constant="16" id="JM6-ju-xHT"/>
+                                    <constraint firstItem="ms8-pP-CcT" firstAttribute="leading" secondItem="N5q-kt-tq1" secondAttribute="leading" constant="16" id="dXd-Dh-22w"/>
+                                    <constraint firstItem="ms8-pP-CcT" firstAttribute="centerX" secondItem="N5q-kt-tq1" secondAttribute="centerX" id="iLl-aD-0kp"/>
+                                    <constraint firstItem="ms8-pP-CcT" firstAttribute="centerY" secondItem="N5q-kt-tq1" secondAttribute="centerY" id="xNg-Ul-bpg"/>
+                                </constraints>
+                                <size key="customSize" width="137" height="75"/>
+                                <connections>
+                                    <outlet property="sportsButton" destination="ms8-pP-CcT" id="4Kt-S8-2mY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="buE-tN-Gek" id="2Iu-e0-YAM"/>
+                            <outlet property="delegate" destination="buE-tN-Gek" id="tqJ-Ve-onq"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mbs-1l-pAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253.5999999999999" y="823.53823088455783"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pZE-3d-M9G">
