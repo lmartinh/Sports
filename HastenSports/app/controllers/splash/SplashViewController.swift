@@ -26,6 +26,8 @@ class SplashViewController:  UIViewController {
         self.animationView.loopMode = .loop
         self.animationView.play()
         
+        self.presenter?.getSportsInfo()
+        
         
         
         
@@ -37,6 +39,15 @@ class SplashViewController:  UIViewController {
 
 
 extension SplashViewController: SplashViewProtocol{
+    
+    func onGetSportsInfoSuccess(data: SportsData) {
+        <#code#>
+    }
+    
+    func onGetSportsInfoError() {
+        <#code#>
+    }
+    
 
 
 }

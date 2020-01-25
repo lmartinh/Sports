@@ -12,7 +12,7 @@ import RxSwift
 
 class ApiClient {
     
-    static func getSportsInfo() -> Observable<SportsData> {
+    static func getSportsInfo() -> Observable<Array<Sport>> {
         return request(ApiRouter.getSportsInfo)
     }
     //-------------------------------------------------------------------------------------------------

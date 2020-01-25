@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChargyPointItemView" customModule="HastenSports" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="76v-3p-C6i" id="pxO-xF-xYd"/>
+                <outlet property="dateLabel" destination="DGj-L7-CCi" id="VtN-Kh-U7g"/>
+                <outlet property="image" destination="8Ve-x4-zhG" id="EHw-fO-9i7"/>
+                <outlet property="nameLabel" destination="DSe-Nz-FEY" id="sfr-1R-CFV"/>
+                <outlet property="surnameLabel" destination="Vid-9M-Or3" id="g3O-m2-x23"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PlayerItemView" id="76v-3p-C6i" customClass="PlayerItemView" customModule="HastenSports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-c6-Rji">
+                    <rect key="frame" x="230.5" y="0.0" width="1" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="pT7-AO-EJU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="ic_empty_player" translatesAutoresizingMaskIntoConstraints="NO" id="8Ve-x4-zhG">
+                    <rect key="frame" x="15" y="16" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2Ll-Tf-Kf7"/>
+                        <constraint firstAttribute="width" constant="80" id="5rA-2B-CjG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9UJ-cG-hJo">
+                    <rect key="frame" x="111" y="32.5" width="200.5" height="47"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSe-Nz-FEY">
+                            <rect key="frame" x="0.0" y="0.0" width="200.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" insetsLayoutMarginsFromSafeArea="NO" text="Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-9M-Or3">
+                            <rect key="frame" x="0.0" y="23.5" width="200.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06/12/1999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGj-L7-CCi">
+                    <rect key="frame" x="319.5" y="16" width="78.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1aD-c6-Rji" firstAttribute="centerX" secondItem="76v-3p-C6i" secondAttribute="centerX" constant="24" id="0TE-hO-QIE"/>
+                <constraint firstAttribute="bottom" secondItem="1aD-c6-Rji" secondAttribute="bottom" id="5Xc-dD-1qH"/>
+                <constraint firstItem="8Ve-x4-zhG" firstAttribute="top" secondItem="76v-3p-C6i" secondAttribute="top" constant="16" id="73Y-cJ-cCo"/>
+                <constraint firstItem="1aD-c6-Rji" firstAttribute="top" secondItem="76v-3p-C6i" secondAttribute="top" id="AN6-a9-OLQ"/>
+                <constraint firstItem="9UJ-cG-hJo" firstAttribute="leading" secondItem="8Ve-x4-zhG" secondAttribute="trailing" constant="16" id="C0F-fp-z9V"/>
+                <constraint firstItem="8Ve-x4-zhG" firstAttribute="leading" secondItem="76v-3p-C6i" secondAttribute="leading" constant="15" id="Ek3-Pf-y1d"/>
+                <constraint firstItem="9UJ-cG-hJo" firstAttribute="centerY" secondItem="8Ve-x4-zhG" secondAttribute="centerY" id="TO1-Cd-sai"/>
+                <constraint firstItem="DGj-L7-CCi" firstAttribute="top" secondItem="76v-3p-C6i" secondAttribute="top" constant="16" id="fcJ-uU-cW4"/>
+                <constraint firstAttribute="trailing" secondItem="DGj-L7-CCi" secondAttribute="trailing" constant="16" id="iRK-5L-Mej"/>
+                <constraint firstItem="DGj-L7-CCi" firstAttribute="leading" secondItem="DSe-Nz-FEY" secondAttribute="trailing" constant="8" id="m9m-vB-GzE"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Ve-x4-zhG" secondAttribute="bottom" constant="16" id="mEu-Rk-EWL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136" y="74.662668665667169"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_empty_player" width="114" height="114"/>
+    </resources>
+</document>

@@ -1,5 +1,5 @@
 //
-//  SplashViewProtocol.swift
+//  Sport.swift
 //  HastenSports
 //
 //  Created by Leticia Martín on 25/01/2020.
@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol SplashViewProtocol: class {
-
+struct Sport: Codable {
+    var players: Array<Player>
+    var type: String
+    var title: String
 }
+
