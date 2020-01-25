@@ -24,6 +24,8 @@ class SplashViewController:  BaseViewController {
         //init presenter
         presenter = SplashPresenter(view: self)
         
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        
         self.animationView.loopMode = .loop
         self.animationView.play()
         

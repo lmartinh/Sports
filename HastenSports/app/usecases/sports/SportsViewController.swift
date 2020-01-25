@@ -13,6 +13,7 @@ final class SportsViewController: UICollectionViewController {
     
     private let reuseIdentifier = "SportCell"
     var data: Array<Sport>? = nil
+    private var sportSelected : Sport? = nil
     private var sportsData: [String] = []
     private let itemsPerRow: CGFloat = 2
     private let sectionInsets = UIEdgeInsets(top: 20.0,
@@ -29,9 +30,20 @@ final class SportsViewController: UICollectionViewController {
             }
         }
         
-        
+    }
+ 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "from_sports_to_players" {
+            if let destinationVC = segue.destination as? PlayersViewController {
+                destinationVC.sport = self.sportSelected
+            }
+        }
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -62,8 +74,21 @@ extension SportsViewController: UICollectionViewDelegateFlowLayout {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SportsCellViewController
         cell.backgroundColor = .white
+        cell.position = indexPath.row
         cell.sportsButton.setTitle(sportsData[indexPath.row], for: .normal)
+        cell.delegate = self
         
         return cell
     }
+
+}
+
+
+extension SportsViewController :SportsCellViewDelegate{
+    func sportSelected(index: Int) {
+        self.sportSelected = self.data?[index]
+        self.performSegue(withIdentifier: "from_sports_to_players", sender: self)
+    }
+    
+    
 }

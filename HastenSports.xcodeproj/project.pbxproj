@@ -34,6 +34,7 @@
 		C376945B23DC45F000320565 /* HastenSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376945A23DC45F000320565 /* HastenSportsUITests.swift */; };
 		C376946B23DC485800320565 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376946A23DC485800320565 /* ApiClient.swift */; };
 		C388A65D23DC944F0082E64D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388A65C23DC944F0082E64D /* CustomButton.swift */; };
+		C388A66023DCA3ED0082E64D /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388A65F23DCA3ED0082E64D /* PlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		C376945C23DC45F000320565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C376946A23DC485800320565 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		C388A65C23DC944F0082E64D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C388A65F23DCA3ED0082E64D /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		F5AC4A1C6CA51CC104F2C51D /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,14 +165,14 @@
 			path = lottie;
 			sourceTree = "<group>";
 		};
-		C3233D7923DC6FF5005A64A9 /* controllers */ = {
+		C3233D7923DC6FF5005A64A9 /* usecases */ = {
 			isa = PBXGroup;
 			children = (
-				C3233D8123DC714C005A64A9 /* base */,
+				C388A65E23DCA3CC0082E64D /* players */,
 				C376946C23DC486100320565 /* splash */,
 				C376946D23DC487100320565 /* sports */,
 			);
-			path = controllers;
+			path = usecases;
 			sourceTree = "<group>";
 		};
 		C3233D7A23DC7013005A64A9 /* utils */ = {
@@ -276,10 +278,11 @@
 		C376946923DC467000320565 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C3233D8123DC714C005A64A9 /* base */,
 				C388A65B23DC94180082E64D /* UIStyle */,
 				C3233D7A23DC7013005A64A9 /* utils */,
 				C3233D8423DC72C8005A64A9 /* views */,
-				C3233D7923DC6FF5005A64A9 /* controllers */,
+				C3233D7923DC6FF5005A64A9 /* usecases */,
 				C3233D7623DC61C8005A64A9 /* lottie */,
 			);
 			path = app;
@@ -310,6 +313,14 @@
 				C388A65C23DC944F0082E64D /* CustomButton.swift */,
 			);
 			path = UIStyle;
+			sourceTree = "<group>";
+		};
+		C388A65E23DCA3CC0082E64D /* players */ = {
+			isa = PBXGroup;
+			children = (
+				C388A65F23DCA3ED0082E64D /* PlayersViewController.swift */,
+			);
+			path = players;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,6 +579,7 @@
 				C3233D7123DC616A005A64A9 /* SplashViewController.swift in Sources */,
 				C388A65D23DC944F0082E64D /* CustomButton.swift in Sources */,
 				C3233D9123DC874E005A64A9 /* SportsViewController.swift in Sources */,
+				C388A66023DCA3ED0082E64D /* PlayersViewController.swift in Sources */,
 				C3233D7523DC6192005A64A9 /* SplashViewProtocol.swift in Sources */,
 				C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */,
 			);

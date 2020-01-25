@@ -19,7 +19,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" restorationIdentifier="PlayerItemView" id="76v-3p-C6i" customClass="PlayerItemView" customModule="HastenSports" customModuleProvider="target">
+        <view contentMode="scaleToFill" restorationIdentifier="PlayerItemView" id="76v-3p-C6i">
             <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -69,7 +69,7 @@
                 <constraint firstItem="9UJ-cG-hJo" firstAttribute="centerY" secondItem="8Ve-x4-zhG" secondAttribute="centerY" id="TO1-Cd-sai"/>
                 <constraint firstItem="DGj-L7-CCi" firstAttribute="top" secondItem="76v-3p-C6i" secondAttribute="top" constant="16" id="fcJ-uU-cW4"/>
                 <constraint firstAttribute="trailing" secondItem="DGj-L7-CCi" secondAttribute="trailing" constant="16" id="iRK-5L-Mej"/>
-                <constraint firstItem="DGj-L7-CCi" firstAttribute="leading" secondItem="DSe-Nz-FEY" secondAttribute="trailing" constant="8" id="m9m-vB-GzE"/>
+                <constraint firstItem="DGj-L7-CCi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DSe-Nz-FEY" secondAttribute="trailing" priority="750" constant="8" id="m9m-vB-GzE"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Ve-x4-zhG" secondAttribute="bottom" constant="16" id="mEu-Rk-EWL"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

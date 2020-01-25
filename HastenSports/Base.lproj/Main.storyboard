@@ -97,6 +97,9 @@
                                             <state key="normal" title="Button">
                                                 <color key="titleColor" red="0.71852736399999995" green="0.059521487550000002" blue="0.13838017969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="onSportButtonSelected:" destination="N5q-kt-tq1" eventType="touchUpInside" id="MBT-AW-oxC"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -117,10 +120,53 @@
                             <outlet property="delegate" destination="buE-tN-Gek" id="tqJ-Ve-onq"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="HWi-gS-X2P" kind="show" identifier="from_sports_to_players" id="hjJ-Ac-YQ2"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbs-1l-pAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.5999999999999" y="823.53823088455783"/>
+            <point key="canvasLocation" x="1241" y="822"/>
+        </scene>
+        <!--Players View Controller-->
+        <scene sceneID="kud-7L-rKt">
+            <objects>
+                <tableViewController id="HWi-gS-X2P" customClass="PlayersViewController" customModule="HastenSports" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0vP-97-ehu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="playerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" id="hpB-dF-qgx">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hpB-dF-qgx" id="Oik-hO-oap">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view tag="1000" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeD-E3-SHl" customClass="PlayerItemView" customModule="HastenSports" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="8" width="343" height="27.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KeD-E3-SHl" firstAttribute="top" secondItem="Oik-hO-oap" secondAttribute="top" constant="8" id="29g-ky-3ae"/>
+                                        <constraint firstAttribute="bottom" secondItem="KeD-E3-SHl" secondAttribute="bottom" constant="8" id="REq-dt-aJL"/>
+                                        <constraint firstAttribute="trailing" secondItem="KeD-E3-SHl" secondAttribute="trailing" constant="16" id="koo-7T-bIb"/>
+                                        <constraint firstItem="KeD-E3-SHl" firstAttribute="leading" secondItem="Oik-hO-oap" secondAttribute="leading" constant="16" id="wcZ-qe-atQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HWi-gS-X2P" id="H9a-Yt-7Re"/>
+                            <outlet property="delegate" destination="HWi-gS-X2P" id="X1R-kw-0BI"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nez-tI-0Ra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134" y="822"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pZE-3d-M9G">
