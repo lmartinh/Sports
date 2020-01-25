@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49B38BED86402B2807B0B1B1 /* Pods_HastenSportsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A547C99B4B185037ED39B8 /* Pods_HastenSportsTests.framework */; };
+		5D65B500FB26E9EFEE4A977D /* Pods_HastenSports_HastenSportsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491F0F605F5B8C8D8B2C1402 /* Pods_HastenSports_HastenSportsUITests.framework */; };
+		76AB5DEC6F703883F014D410 /* Pods_HastenSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AC4A1C6CA51CC104F2C51D /* Pods_HastenSports.framework */; };
+		C3233D6D23DC5A46005A64A9 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D6C23DC5A46005A64A9 /* ApiRouter.swift */; };
+		C3233D6F23DC5B50005A64A9 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D6E23DC5B50005A64A9 /* ApiConstants.swift */; };
+		C3233D7123DC616A005A64A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7023DC616A005A64A9 /* SplashViewController.swift */; };
+		C3233D7323DC617B005A64A9 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7223DC617B005A64A9 /* SplashPresenter.swift */; };
+		C3233D7523DC6192005A64A9 /* SplashViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7423DC6192005A64A9 /* SplashViewProtocol.swift */; };
+		C3233D7823DC620A005A64A9 /* splash_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = C3233D7723DC620A005A64A9 /* splash_lottie.json */; };
+		C3233D7C23DC7057005A64A9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7B23DC7057005A64A9 /* Utils.swift */; };
+		C3233D7E23DC709F005A64A9 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7D23DC709F005A64A9 /* Sport.swift */; };
+		C3233D8023DC70AF005A64A9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7F23DC70AF005A64A9 /* Player.swift */; };
+		C3233D8323DC7172005A64A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D8223DC7172005A64A9 /* BaseViewController.swift */; };
+		C3233D8A23DC72ED005A64A9 /* PlayerItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3233D8623DC72EC005A64A9 /* PlayerItemView.xib */; };
+		C3233D8B23DC72ED005A64A9 /* PlayerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D8723DC72EC005A64A9 /* PlayerItemView.swift */; };
+		C3233D8F23DC775C005A64A9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D8E23DC775C005A64A9 /* Extensions.swift */; };
+		C3233D9123DC874E005A64A9 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D9023DC874E005A64A9 /* SportsViewController.swift */; };
+		C3233D9323DC8B79005A64A9 /* SportsCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D9223DC8B79005A64A9 /* SportsCellViewController.swift */; };
+		C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376943A23DC45EF00320565 /* AppDelegate.swift */; };
+		C376943D23DC45EF00320565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376943C23DC45EF00320565 /* ViewController.swift */; };
+		C376944023DC45EF00320565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376943E23DC45EF00320565 /* Main.storyboard */; };
+		C376944223DC45F000320565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C376944123DC45F000320565 /* Assets.xcassets */; };
+		C376944523DC45F000320565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376944323DC45F000320565 /* LaunchScreen.storyboard */; };
+		C376945023DC45F000320565 /* HastenSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376944F23DC45F000320565 /* HastenSportsTests.swift */; };
+		C376945B23DC45F000320565 /* HastenSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376945A23DC45F000320565 /* HastenSportsUITests.swift */; };
+		C376946B23DC485800320565 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376946A23DC485800320565 /* ApiClient.swift */; };
+		C388A65D23DC944F0082E64D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388A65C23DC944F0082E64D /* CustomButton.swift */; };
+		C388A66023DCA3ED0082E64D /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388A65F23DCA3ED0082E64D /* PlayersViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C376944C23DC45F000320565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C376942F23DC45EF00320565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C376943623DC45EF00320565;
+			remoteInfo = HastenSports;
+		};
+		C376945723DC45F000320565 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C376942F23DC45EF00320565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C376943623DC45EF00320565;
+			remoteInfo = HastenSports;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2065C4445A369C60EF00D675 /* Pods-HastenSportsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSportsTests.debug.xcconfig"; path = "Target Support Files/Pods-HastenSportsTests/Pods-HastenSportsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CAD5480D1DA2A67A66D8418 /* Pods-HastenSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.debug.xcconfig"; path = "Target Support Files/Pods-HastenSports/Pods-HastenSports.debug.xcconfig"; sourceTree = "<group>"; };
+		35C70DA8EE89055F10F104F3 /* Pods-HastenSports-HastenSportsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports-HastenSportsUITests.release.xcconfig"; path = "Target Support Files/Pods-HastenSports-HastenSportsUITests/Pods-HastenSports-HastenSportsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39A547C99B4B185037ED39B8 /* Pods_HastenSportsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSportsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B065F1B41C5E58335150CD /* Pods-HastenSportsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSportsTests.release.xcconfig"; path = "Target Support Files/Pods-HastenSportsTests/Pods-HastenSportsTests.release.xcconfig"; sourceTree = "<group>"; };
+		491F0F605F5B8C8D8B2C1402 /* Pods_HastenSports_HastenSportsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports_HastenSportsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D276EBD9A1361B76DAEC81 /* Pods-HastenSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports.release.xcconfig"; path = "Target Support Files/Pods-HastenSports/Pods-HastenSports.release.xcconfig"; sourceTree = "<group>"; };
+		7E0E1CEEB73BB2832739DCDC /* Pods-HastenSports-HastenSportsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HastenSports-HastenSportsUITests.debug.xcconfig"; path = "Target Support Files/Pods-HastenSports-HastenSportsUITests/Pods-HastenSports-HastenSportsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3233D6C23DC5A46005A64A9 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		C3233D6E23DC5B50005A64A9 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		C3233D7023DC616A005A64A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C3233D7223DC617B005A64A9 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		C3233D7423DC6192005A64A9 /* SplashViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewProtocol.swift; sourceTree = "<group>"; };
+		C3233D7723DC620A005A64A9 /* splash_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_lottie.json; sourceTree = "<group>"; };
+		C3233D7B23DC7057005A64A9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C3233D7D23DC709F005A64A9 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		C3233D7F23DC70AF005A64A9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C3233D8223DC7172005A64A9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C3233D8623DC72EC005A64A9 /* PlayerItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerItemView.xib; sourceTree = "<group>"; };
+		C3233D8723DC72EC005A64A9 /* PlayerItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerItemView.swift; sourceTree = "<group>"; };
+		C3233D8E23DC775C005A64A9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C3233D9023DC874E005A64A9 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		C3233D9223DC8B79005A64A9 /* SportsCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCellViewController.swift; sourceTree = "<group>"; };
+		C376943723DC45EF00320565 /* HastenSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C376943A23DC45EF00320565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C376943C23DC45EF00320565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C376943F23DC45EF00320565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C376944123DC45F000320565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C376944423DC45F000320565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C376944623DC45F000320565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C376944B23DC45F000320565 /* HastenSportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HastenSportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C376944F23DC45F000320565 /* HastenSportsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastenSportsTests.swift; sourceTree = "<group>"; };
+		C376945123DC45F000320565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C376945623DC45F000320565 /* HastenSportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HastenSportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C376945A23DC45F000320565 /* HastenSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastenSportsUITests.swift; sourceTree = "<group>"; };
+		C376945C23DC45F000320565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C376946A23DC485800320565 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		C388A65C23DC944F0082E64D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C388A65F23DCA3ED0082E64D /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		F5AC4A1C6CA51CC104F2C51D /* Pods_HastenSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HastenSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C376943423DC45EF00320565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76AB5DEC6F703883F014D410 /* Pods_HastenSports.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376944823DC45F000320565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B38BED86402B2807B0B1B1 /* Pods_HastenSportsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376945323DC45F000320565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D65B500FB26E9EFEE4A977D /* Pods_HastenSports_HastenSportsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C19B9AE3981AD748F6B1AFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC4A1C6CA51CC104F2C51D /* Pods_HastenSports.framework */,
+				491F0F605F5B8C8D8B2C1402 /* Pods_HastenSports_HastenSportsUITests.framework */,
+				39A547C99B4B185037ED39B8 /* Pods_HastenSportsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83525BD3348DEBA42C0172C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CAD5480D1DA2A67A66D8418 /* Pods-HastenSports.debug.xcconfig */,
+				54D276EBD9A1361B76DAEC81 /* Pods-HastenSports.release.xcconfig */,
+				7E0E1CEEB73BB2832739DCDC /* Pods-HastenSports-HastenSportsUITests.debug.xcconfig */,
+				35C70DA8EE89055F10F104F3 /* Pods-HastenSports-HastenSportsUITests.release.xcconfig */,
+				2065C4445A369C60EF00D675 /* Pods-HastenSportsTests.debug.xcconfig */,
+				41B065F1B41C5E58335150CD /* Pods-HastenSportsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3233D6923DC57F8005A64A9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D7D23DC709F005A64A9 /* Sport.swift */,
+				C3233D7F23DC70AF005A64A9 /* Player.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		C3233D7623DC61C8005A64A9 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D7723DC620A005A64A9 /* splash_lottie.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
+		C3233D7923DC6FF5005A64A9 /* usecases */ = {
+			isa = PBXGroup;
+			children = (
+				C388A65E23DCA3CC0082E64D /* players */,
+				C376946C23DC486100320565 /* splash */,
+				C376946D23DC487100320565 /* sports */,
+			);
+			path = usecases;
+			sourceTree = "<group>";
+		};
+		C3233D7A23DC7013005A64A9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D7B23DC7057005A64A9 /* Utils.swift */,
+				C3233D8E23DC775C005A64A9 /* Extensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C3233D8123DC714C005A64A9 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D8223DC7172005A64A9 /* BaseViewController.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		C3233D8423DC72C8005A64A9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D8523DC72EC005A64A9 /* PlayerItemView */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C3233D8523DC72EC005A64A9 /* PlayerItemView */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D8623DC72EC005A64A9 /* PlayerItemView.xib */,
+				C3233D8723DC72EC005A64A9 /* PlayerItemView.swift */,
+			);
+			path = PlayerItemView;
+			sourceTree = "<group>";
+		};
+		C376942E23DC45EF00320565 = {
+			isa = PBXGroup;
+			children = (
+				C376943923DC45EF00320565 /* HastenSports */,
+				C376944E23DC45F000320565 /* HastenSportsTests */,
+				C376945923DC45F000320565 /* HastenSportsUITests */,
+				C376943823DC45EF00320565 /* Products */,
+				83525BD3348DEBA42C0172C4 /* Pods */,
+				1C19B9AE3981AD748F6B1AFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C376943823DC45EF00320565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C376943723DC45EF00320565 /* HastenSports.app */,
+				C376944B23DC45F000320565 /* HastenSportsTests.xctest */,
+				C376945623DC45F000320565 /* HastenSportsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C376943923DC45EF00320565 /* HastenSports */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D6923DC57F8005A64A9 /* data */,
+				C376946923DC467000320565 /* app */,
+				C376946823DC466600320565 /* api */,
+				C376943A23DC45EF00320565 /* AppDelegate.swift */,
+				C376943C23DC45EF00320565 /* ViewController.swift */,
+				C376943E23DC45EF00320565 /* Main.storyboard */,
+				C376944123DC45F000320565 /* Assets.xcassets */,
+				C376944323DC45F000320565 /* LaunchScreen.storyboard */,
+				C376944623DC45F000320565 /* Info.plist */,
+			);
+			path = HastenSports;
+			sourceTree = "<group>";
+		};
+		C376944E23DC45F000320565 /* HastenSportsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C376944F23DC45F000320565 /* HastenSportsTests.swift */,
+				C376945123DC45F000320565 /* Info.plist */,
+			);
+			path = HastenSportsTests;
+			sourceTree = "<group>";
+		};
+		C376945923DC45F000320565 /* HastenSportsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C376945A23DC45F000320565 /* HastenSportsUITests.swift */,
+				C376945C23DC45F000320565 /* Info.plist */,
+			);
+			path = HastenSportsUITests;
+			sourceTree = "<group>";
+		};
+		C376946823DC466600320565 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				C376946A23DC485800320565 /* ApiClient.swift */,
+				C3233D6C23DC5A46005A64A9 /* ApiRouter.swift */,
+				C3233D6E23DC5B50005A64A9 /* ApiConstants.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		C376946923DC467000320565 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D8123DC714C005A64A9 /* base */,
+				C388A65B23DC94180082E64D /* UIStyle */,
+				C3233D7A23DC7013005A64A9 /* utils */,
+				C3233D8423DC72C8005A64A9 /* views */,
+				C3233D7923DC6FF5005A64A9 /* usecases */,
+				C3233D7623DC61C8005A64A9 /* lottie */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		C376946C23DC486100320565 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D7023DC616A005A64A9 /* SplashViewController.swift */,
+				C3233D7223DC617B005A64A9 /* SplashPresenter.swift */,
+				C3233D7423DC6192005A64A9 /* SplashViewProtocol.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		C376946D23DC487100320565 /* sports */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D9023DC874E005A64A9 /* SportsViewController.swift */,
+				C3233D9223DC8B79005A64A9 /* SportsCellViewController.swift */,
+			);
+			path = sports;
+			sourceTree = "<group>";
+		};
+		C388A65B23DC94180082E64D /* UIStyle */ = {
+			isa = PBXGroup;
+			children = (
+				C388A65C23DC944F0082E64D /* CustomButton.swift */,
+			);
+			path = UIStyle;
+			sourceTree = "<group>";
+		};
+		C388A65E23DCA3CC0082E64D /* players */ = {
+			isa = PBXGroup;
+			children = (
+				C388A65F23DCA3ED0082E64D /* PlayersViewController.swift */,
+			);
+			path = players;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C376943623DC45EF00320565 /* HastenSports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C376945F23DC45F000320565 /* Build configuration list for PBXNativeTarget "HastenSports" */;
+			buildPhases = (
+				2A21EADCA76D212EB57077A0 /* [CP] Check Pods Manifest.lock */,
+				C376943323DC45EF00320565 /* Sources */,
+				C376943423DC45EF00320565 /* Frameworks */,
+				C376943523DC45EF00320565 /* Resources */,
+				C000AD17B3F64C8008762B7A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HastenSports;
+			productName = HastenSports;
+			productReference = C376943723DC45EF00320565 /* HastenSports.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C376944A23DC45F000320565 /* HastenSportsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C376946223DC45F000320565 /* Build configuration list for PBXNativeTarget "HastenSportsTests" */;
+			buildPhases = (
+				911A8B37545F732A688724C5 /* [CP] Check Pods Manifest.lock */,
+				C376944723DC45F000320565 /* Sources */,
+				C376944823DC45F000320565 /* Frameworks */,
+				C376944923DC45F000320565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C376944D23DC45F000320565 /* PBXTargetDependency */,
+			);
+			name = HastenSportsTests;
+			productName = HastenSportsTests;
+			productReference = C376944B23DC45F000320565 /* HastenSportsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C376945523DC45F000320565 /* HastenSportsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C376946523DC45F000320565 /* Build configuration list for PBXNativeTarget "HastenSportsUITests" */;
+			buildPhases = (
+				A97FF071C90F6992CD0B62D4 /* [CP] Check Pods Manifest.lock */,
+				C376945223DC45F000320565 /* Sources */,
+				C376945323DC45F000320565 /* Frameworks */,
+				C376945423DC45F000320565 /* Resources */,
+				69BFB9EB7B9B2A69EE5591E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C376945823DC45F000320565 /* PBXTargetDependency */,
+			);
+			name = HastenSportsUITests;
+			productName = HastenSportsUITests;
+			productReference = C376945623DC45F000320565 /* HastenSportsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C376942F23DC45EF00320565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Leticia Martín";
+				TargetAttributes = {
+					C376943623DC45EF00320565 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C376944A23DC45F000320565 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C376943623DC45EF00320565;
+					};
+					C376945523DC45F000320565 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C376943623DC45EF00320565;
+					};
+				};
+			};
+			buildConfigurationList = C376943223DC45EF00320565 /* Build configuration list for PBXProject "HastenSports" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C376942E23DC45EF00320565;
+			productRefGroup = C376943823DC45EF00320565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C376943623DC45EF00320565 /* HastenSports */,
+				C376944A23DC45F000320565 /* HastenSportsTests */,
+				C376945523DC45F000320565 /* HastenSportsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C376943523DC45EF00320565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C376944523DC45F000320565 /* LaunchScreen.storyboard in Resources */,
+				C3233D7823DC620A005A64A9 /* splash_lottie.json in Resources */,
+				C3233D8A23DC72ED005A64A9 /* PlayerItemView.xib in Resources */,
+				C376944223DC45F000320565 /* Assets.xcassets in Resources */,
+				C376944023DC45EF00320565 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376944923DC45F000320565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376945423DC45F000320565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A21EADCA76D212EB57077A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HastenSports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69BFB9EB7B9B2A69EE5591E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HastenSports-HastenSportsUITests/Pods-HastenSports-HastenSportsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HastenSports-HastenSportsUITests/Pods-HastenSports-HastenSportsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HastenSports-HastenSportsUITests/Pods-HastenSports-HastenSportsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		911A8B37545F732A688724C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HastenSportsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A97FF071C90F6992CD0B62D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HastenSports-HastenSportsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C000AD17B3F64C8008762B7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HastenSports/Pods-HastenSports-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HastenSports/Pods-HastenSports-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HastenSports/Pods-HastenSports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C376943323DC45EF00320565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3233D8323DC7172005A64A9 /* BaseViewController.swift in Sources */,
+				C3233D8B23DC72ED005A64A9 /* PlayerItemView.swift in Sources */,
+				C3233D7E23DC709F005A64A9 /* Sport.swift in Sources */,
+				C3233D9323DC8B79005A64A9 /* SportsCellViewController.swift in Sources */,
+				C376943D23DC45EF00320565 /* ViewController.swift in Sources */,
+				C3233D6F23DC5B50005A64A9 /* ApiConstants.swift in Sources */,
+				C3233D8023DC70AF005A64A9 /* Player.swift in Sources */,
+				C3233D7323DC617B005A64A9 /* SplashPresenter.swift in Sources */,
+				C3233D6D23DC5A46005A64A9 /* ApiRouter.swift in Sources */,
+				C3233D7C23DC7057005A64A9 /* Utils.swift in Sources */,
+				C3233D8F23DC775C005A64A9 /* Extensions.swift in Sources */,
+				C376946B23DC485800320565 /* ApiClient.swift in Sources */,
+				C3233D7123DC616A005A64A9 /* SplashViewController.swift in Sources */,
+				C388A65D23DC944F0082E64D /* CustomButton.swift in Sources */,
+				C3233D9123DC874E005A64A9 /* SportsViewController.swift in Sources */,
+				C388A66023DCA3ED0082E64D /* PlayersViewController.swift in Sources */,
+				C3233D7523DC6192005A64A9 /* SplashViewProtocol.swift in Sources */,
+				C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376944723DC45F000320565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C376945023DC45F000320565 /* HastenSportsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C376945223DC45F000320565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C376945B23DC45F000320565 /* HastenSportsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C376944D23DC45F000320565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C376943623DC45EF00320565 /* HastenSports */;
+			targetProxy = C376944C23DC45F000320565 /* PBXContainerItemProxy */;
+		};
+		C376945823DC45F000320565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C376943623DC45EF00320565 /* HastenSports */;
+			targetProxy = C376945723DC45F000320565 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C376943E23DC45EF00320565 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C376943F23DC45EF00320565 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C376944323DC45F000320565 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C376944423DC45F000320565 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C376945D23DC45F000320565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C376945E23DC45F000320565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C376946023DC45F000320565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CAD5480D1DA2A67A66D8418 /* Pods-HastenSports.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HastenSports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.HastenSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C376946123DC45F000320565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D276EBD9A1361B76DAEC81 /* Pods-HastenSports.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HastenSports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.HastenSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C376946323DC45F000320565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2065C4445A369C60EF00D675 /* Pods-HastenSportsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HastenSportsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.hasten.HastenSportsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HastenSports.app/HastenSports";
+			};
+			name = Debug;
+		};
+		C376946423DC45F000320565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B065F1B41C5E58335150CD /* Pods-HastenSportsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HastenSportsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.hasten.HastenSportsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HastenSports.app/HastenSports";
+			};
+			name = Release;
+		};
+		C376946623DC45F000320565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0E1CEEB73BB2832739DCDC /* Pods-HastenSports-HastenSportsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HastenSportsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.hasten.HastenSportsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HastenSports;
+			};
+			name = Debug;
+		};
+		C376946723DC45F000320565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C70DA8EE89055F10F104F3 /* Pods-HastenSports-HastenSportsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HastenSportsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leticia.hasten.HastenSportsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HastenSports;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C376943223DC45EF00320565 /* Build configuration list for PBXProject "HastenSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C376945D23DC45F000320565 /* Debug */,
+				C376945E23DC45F000320565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C376945F23DC45F000320565 /* Build configuration list for PBXNativeTarget "HastenSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C376946023DC45F000320565 /* Debug */,
+				C376946123DC45F000320565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C376946223DC45F000320565 /* Build configuration list for PBXNativeTarget "HastenSportsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C376946323DC45F000320565 /* Debug */,
+				C376946423DC45F000320565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C376946523DC45F000320565 /* Build configuration list for PBXNativeTarget "HastenSportsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C376946623DC45F000320565 /* Debug */,
+				C376946723DC45F000320565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C376942F23DC45EF00320565 /* Project object */;
+}
