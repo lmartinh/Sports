@@ -1,0 +1,20 @@
+//
+//  SplashPresenter.swift
+//  HastenSports
+//
+//  Created by Leticia Martín on 25/01/2020.
+//  Copyright © 2020 Leticia Martín. All rights reserved.
+//
+
+import Foundation
+
+class SplashPresenter {
+    
+    unowned let view: SplashViewProtocol
+    
+    required init(view: SplashViewProtocol) {
+        self.view = view
+    }
+
+
+}

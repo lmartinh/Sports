@@ -13,6 +13,10 @@
 		C3233D6B23DC581A005A64A9 /* SportsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D6A23DC581A005A64A9 /* SportsData.swift */; };
 		C3233D6D23DC5A46005A64A9 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D6C23DC5A46005A64A9 /* ApiRouter.swift */; };
 		C3233D6F23DC5B50005A64A9 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D6E23DC5B50005A64A9 /* ApiConstants.swift */; };
+		C3233D7123DC616A005A64A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7023DC616A005A64A9 /* SplashViewController.swift */; };
+		C3233D7323DC617B005A64A9 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7223DC617B005A64A9 /* SplashPresenter.swift */; };
+		C3233D7523DC6192005A64A9 /* SplashViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3233D7423DC6192005A64A9 /* SplashViewProtocol.swift */; };
+		C3233D7823DC620A005A64A9 /* splash_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = C3233D7723DC620A005A64A9 /* splash_lottie.json */; };
 		C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376943A23DC45EF00320565 /* AppDelegate.swift */; };
 		C376943D23DC45EF00320565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376943C23DC45EF00320565 /* ViewController.swift */; };
 		C376944023DC45EF00320565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C376943E23DC45EF00320565 /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		C3233D6A23DC581A005A64A9 /* SportsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsData.swift; sourceTree = "<group>"; };
 		C3233D6C23DC5A46005A64A9 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		C3233D6E23DC5B50005A64A9 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		C3233D7023DC616A005A64A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C3233D7223DC617B005A64A9 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		C3233D7423DC6192005A64A9 /* SplashViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewProtocol.swift; sourceTree = "<group>"; };
+		C3233D7723DC620A005A64A9 /* splash_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_lottie.json; sourceTree = "<group>"; };
 		C376943723DC45EF00320565 /* HastenSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C376943A23DC45EF00320565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C376943C23DC45EF00320565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +136,14 @@
 			path = data;
 			sourceTree = "<group>";
 		};
+		C3233D7623DC61C8005A64A9 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				C3233D7723DC620A005A64A9 /* splash_lottie.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
 		C376942E23DC45EF00320565 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +213,7 @@
 		C376946923DC467000320565 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C3233D7623DC61C8005A64A9 /* lottie */,
 				C376946D23DC487100320565 /* main */,
 				C376946C23DC486100320565 /* splash */,
 			);
@@ -206,6 +223,9 @@
 		C376946C23DC486100320565 /* splash */ = {
 			isa = PBXGroup;
 			children = (
+				C3233D7023DC616A005A64A9 /* SplashViewController.swift */,
+				C3233D7223DC617B005A64A9 /* SplashPresenter.swift */,
+				C3233D7423DC6192005A64A9 /* SplashViewProtocol.swift */,
 			);
 			path = splash;
 			sourceTree = "<group>";
@@ -327,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C376944523DC45F000320565 /* LaunchScreen.storyboard in Resources */,
+				C3233D7823DC620A005A64A9 /* splash_lottie.json in Resources */,
 				C376944223DC45F000320565 /* Assets.xcassets in Resources */,
 				C376944023DC45EF00320565 /* Main.storyboard in Resources */,
 			);
@@ -459,8 +480,11 @@
 				C3233D6B23DC581A005A64A9 /* SportsData.swift in Sources */,
 				C376943D23DC45EF00320565 /* ViewController.swift in Sources */,
 				C3233D6F23DC5B50005A64A9 /* ApiConstants.swift in Sources */,
+				C3233D7323DC617B005A64A9 /* SplashPresenter.swift in Sources */,
 				C3233D6D23DC5A46005A64A9 /* ApiRouter.swift in Sources */,
 				C376946B23DC485800320565 /* ApiClient.swift in Sources */,
+				C3233D7123DC616A005A64A9 /* SplashViewController.swift in Sources */,
+				C3233D7523DC6192005A64A9 /* SplashViewProtocol.swift in Sources */,
 				C376943B23DC45EF00320565 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
