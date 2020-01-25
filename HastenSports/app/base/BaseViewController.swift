@@ -17,11 +17,6 @@ class BaseViewController: UIViewController {
         
     }
     
-    
-    func showAlert(description: String, isCancelVisible: Bool = false) {
-        
-    }
-    
     public func NSLocalizedString(_ key: String, tableName: String? = nil, bundle: Bundle = Bundle.main, value: String = "", comment: String) -> String {
         let fallbackLanguage = "en"
         guard let fallbackBundlePath = Bundle.main.path(forResource: fallbackLanguage, ofType: "lproj") else { return key }

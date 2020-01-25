@@ -31,15 +31,10 @@ class SplashViewController:  BaseViewController {
         
         if(!Utils.isConnectedToNetwork()){
             self.stopLottie()
-            self.showAlert(description: NSLocalizedString("internet_error", comment: ""), isCancelVisible: false)
+            self.showAlert(description: "Internet connection error")
         }else{
             self.presenter?.getSportsInfo()
         }
-        
-        
-        
-        
-        
         
     }
     
@@ -52,6 +47,21 @@ class SplashViewController:  BaseViewController {
     
     func finishProcess(){
         exit(0);
+    }
+    
+    
+    func showAlert(description: String) {
+        // create the alert
+        let alert = UIAlertController(title: "ERROR", message: description, preferredStyle: UIAlertController.Style.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+            self.finishProcess()
+           
+            }))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -76,7 +86,8 @@ extension SplashViewController: SplashViewProtocol{
     }
     
     func onGetSportsInfoError() {
-        
+        self.stopLottie()
+        self.showAlert(description: "Service error")
     }
     
 
