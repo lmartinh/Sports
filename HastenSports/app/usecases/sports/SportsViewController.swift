@@ -24,6 +24,8 @@ final class SportsViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Sports"
+        
         if let array = data{
             for item in array{
                 self.sportsData.append(item.title)
@@ -34,7 +36,8 @@ final class SportsViewController: UICollectionViewController {
  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationItem.setHidesBackButton(true, animated: true);
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

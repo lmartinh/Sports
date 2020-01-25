@@ -17,6 +17,12 @@ class PlayersViewController: UITableViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let title = sport?.title {
+            self.title = title + " Players"
+        }else{
+            self.title = "Players"
+        }
+        
         
     }
     
