@@ -20,8 +20,6 @@ final class SportsViewController: UICollectionViewController {
                                              bottom: 20.0,
                                              right: 20.0)
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +35,7 @@ final class SportsViewController: UICollectionViewController {
 }
 
 // MARK: - UICollectionViewDataSource
-extension SportsViewController {
+extension SportsViewController: UICollectionViewDelegateFlowLayout {
    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.sportsData.count 
